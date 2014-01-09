@@ -39,4 +39,5 @@ class ProjectDashboardHandler(IPythonHandler):
 #-----------------------------------------------------------------------------
 
 
-default_handlers = [(r"/", ProjectDashboardHandler)]
+default_handlers = [(r"/", ProjectDashboardHandler),
+                    (r"", ProjectDashboardHandler)]
