@@ -1367,7 +1367,7 @@ var IPython = (function (IPython) {
      * @method start_kernel
      */
     Notebook.prototype.start_kernel = function () {
-        var base_url = $('body').data('baseKernelUrl') + "kernels";
+        var base_url = this._baseProjectUrl + "kernels";
         this.kernel = new IPython.Kernel(base_url);
         this.kernel.start(this.notebook_id);
         // Now that the kernel has been created, tell the CodeCells about it.
